@@ -18,16 +18,16 @@
                 <p>Valeim Pictures</p>
             </a>
         </div>
-        <ul>
-            <li class="bouton"><a href="">À propos</a></li>
-            <li class="bouton"><a href="">Réalisations</a></li>
-            <li class="bouton"><a href="">Contact</a></li>
-        </ul>
+        <div id="menu">
+            <a href="" class="bouton">About me</a>
+            <a href="#Réal" class="bouton">Achievements</a>
+            <a href="" class="bouton">Contact me</a>
+        </div>
     </nav>
     <header>
         <div class="desc">
             <h3>Sylas Valeim</h3>
-            <h1>Photographe</h1>
+            <h1>Photographer</h1>
             <p>I’m a non-binary artist and photographer exploring identity, emotion, and human connection through my lens. My work blends creativity and authenticity, capturing raw moments and transforming them into expressive, and sometimes provoking images that reflect both vulnerability and strength.</p>
             <a href="" class="bouton">Book a Session</a>
         </div>
@@ -35,7 +35,7 @@
     </header>
     <main>
         <div id="Presta">
-            <h3>Prestations</h3>
+            <h3>Services</h3>
             <div class="articles">
                 <article>
                     <img src="assets/images/deadpic.jpg" alt="">
@@ -55,21 +55,58 @@
             </div>
         </div>
         <div id="Réal">
-            <h3>Realisations</h3>
-            <div id="slider">
-                <figure>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </figure>
+            <h3>Achievements</h3>
+            <div class="carousel">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+                <input type="radio" name="slider" id="slide6">
+                <input type="radio" name="slider" id="slide7">
+                <input type="radio" name="slider" id="slide8">
+                <input type="radio" name="slider" id="slide9">
+
+                <!-- Slides -->
+                <div class="slides">
+                    <img src="assets/images/art1.jpg" alt="Image 1">
+                    <img src="assets/images/art2.jpg" alt="Image 2">
+                    <img src="assets/images/art3.jpg" alt="Image 3">
+                    <img src="assets/images/art4.jpeg" alt="Image 4">
+                    <img src="assets/images/art5.jpg" alt="Image 5">
+                    <img src="assets/images/art6.jpg" alt="Image 6">
+                    <img src="assets/images/art7.webp" alt="Image 7">
+                    <img src="assets/images/art8.jpg" alt="Image 8">
+                    <img src="assets/images/art9.jpg" alt="Image 9">
+                </div>
+
+                <!-- Flèches navigation -->
+                <!-- Flèche gauche -->
+                <label for="slide9" class="prev" id="prev1">&#10094;</label>
+                <label for="slide1" class="prev" id="prev2">&#10094;</label>
+                <label for="slide2" class="prev" id="prev3">&#10094;</label>
+                <label for="slide3" class="prev" id="prev4">&#10094;</label>
+                <label for="slide4" class="prev" id="prev5">&#10094;</label>
+                <label for="slide5" class="prev" id="prev6">&#10094;</label>
+                <label for="slide6" class="prev" id="prev7">&#10094;</label>
+                <label for="slide7" class="prev" id="prev8">&#10094;</label>
+                <label for="slide8" class="prev" id="prev9">&#10094;</label>
+                
+
+                <!-- Flèche droite -->
+                <label for="slide2" class="next" id="next1">&#10095;</label>
+                <label for="slide3" class="next" id="next2">&#10095;</label>
+                <label for="slide4" class="next" id="next3">&#10095;</label>
+                <label for="slide5" class="next" id="next4">&#10095;</label>
+                <label for="slide6" class="next" id="next5">&#10095;</label>
+                <label for="slide7" class="next" id="next6">&#10095;</label>
+                <label for="slide8" class="next" id="next7">&#10095;</label>
+                <label for="slide9" class="next" id="next8">&#10095;</label>
+                <label for="slide1" class="next" id="next9">&#10095;</label>
             </div>
         </div>
         <div id="Témoin">
-            <h3>Témoignages</h3>
+            <h3>Testimony</h3>
             <div class="articles">
                 <article>
                     <p>Thanks you so much for giving me <br>strength throught your photos</p>
