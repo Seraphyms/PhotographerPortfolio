@@ -29,7 +29,7 @@ a{
     color: black;
     border: 3px solid #f2e0ff;
     border-radius: 15px;
-    width: 150PX;
+    width: fit-content;
     text-align: center;
     padding:12px;
     transition: transform 0.2s ease;
@@ -44,7 +44,7 @@ nav{
     border-radius: 0px 0px 16px 16px;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 15px;
     color: black;
     padding-right: 1%;
     margin-bottom: 2%;
@@ -70,6 +70,17 @@ nav img{
     object-fit: contain;
 }
 
+nav .bouton{
+    margin: 0%;
+    height: fit-content;
+    background-color:  #f0d5ff ;
+    border: 2px solid #fae6fe;
+}
+nav .bouton:hover{
+    background-color:#d1edff;
+    border: 2px solid #eef8ff;
+}
+
 nav #menu{
     display: flex;
     flex-wrap: wrap;
@@ -85,11 +96,13 @@ header {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 1.2em;
+    padding: 2%;
 }
 
 header img{
-    height: 300px ;
-    width: 500px;
+    height: 400px ;
+    width: 400px;
     border-radius: 25px;
     object-fit: cover;
     border: 3px solid #75c9f5;
@@ -104,7 +117,7 @@ header .desc{
     flex-direction: column;
     justify-content: space-between;
     padding: 3%;
-    width: 50vw;
+    width: 600px;
     background-color: rgb(167, 136, 103);
     border-radius: 25px;
     border: 5px solid rgb(182, 151, 118);
@@ -113,19 +126,15 @@ header .desc{
 main h3{
     display: flex;
     background-color: rgba(255, 255, 255);
-    border-radius: 100%;
+    border-radius: 25px;
     font-size: 1.9em;
     font-weight: bold;
     border: 3px solid #e0f3ff;
-    padding: 25px;
+    padding: 15px;
     margin: 40px;
     margin-bottom: 20px;
     text-align: center;
     color: black;
-}
-
-#Réal h3{
-    
 }
 
 /*Prestations*/
@@ -157,6 +166,7 @@ main h3{
     text-align: justify;
     border: 5px solid rgb(182, 151, 118);
     margin-bottom: 50px;
+    margin:30px;
 }
 
 #Presta article img{
@@ -181,30 +191,33 @@ main h3{
 }*/
 /*Carousel*/
 
-.carousel {
-  position: relative;
-  width: 700px;
-  height: 500px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+#carousel {
+    position: relative;
+    width: 90vw;
+    height: 90Vh;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.carousel input {
+#carousel input {
   display: none;
 }
 
 .slides {
   display: flex;
-  width: 400%; /* 4 images x 100% */
+  width: 900%;
   height: 100%;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 .slides img {
-  width: 700px;
-  height: 500px;
-  object-fit: cover;
+    width: 100vw;      
+  height: 100%;      
+  object-fit: cover; 
+  flex-shrink: 0;    
 }
 
 /* Flèches gauche/droite */
@@ -230,14 +243,14 @@ main h3{
 
 /* Déplacement slides selon input */
 #slide1:checked ~ .slides { transform: translateX(0); }
-#slide2:checked ~ .slides { transform: translateX(-25%); }
-#slide3:checked ~ .slides { transform: translateX(-50%); }
-#slide4:checked ~ .slides { transform: translateX(-75%); }
-#slide5:checked ~ .slides { transform: translateX(-100%); }
-#slide6:checked ~ .slides { transform: translateX(-125%); }
-#slide7:checked ~ .slides { transform: translateX(-150%); }
-#slide8:checked ~ .slides { transform: translateX(-175%); }
-#slide9:checked ~ .slides { transform: translateX(-200%); }
+#slide2:checked ~ .slides { transform: translateX(-100vw); }
+#slide3:checked ~ .slides { transform: translateX(-200vw); }
+#slide4:checked ~ .slides { transform: translateX(-300vw); }
+#slide5:checked ~ .slides { transform: translateX(-400vw); }
+#slide6:checked ~ .slides { transform: translateX(-500vw); }
+#slide7:checked ~ .slides { transform: translateX(-600vw); }
+#slide8:checked ~ .slides { transform: translateX(-700vw); }
+#slide9:checked ~ .slides { transform: translateX(-800vw); }
 
 /* Afficher les bonnes flèches selon la slide */
 #slide1:checked ~ #prev1 { display: block; }
@@ -314,14 +327,17 @@ main h3{
 }
 
 footer{
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     color: black;
+    background-color: white;
     margin: 0;
     border-radius: 16px 16px 0px 0px;
     padding: 1%;
+}
+
+.prefoot{  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer img{
@@ -335,12 +351,17 @@ footer h3{
 }
 
 footer .bouton{
-    margin: 0%;
     height: fit-content;
-    background-color:  #dcb5f4 ;
-    border: 2px solid #f0d7f6;
+    font-size: larger;
+    background-color:  #f0d5ff ;
+    border: 2px solid #f7e9fa;
 }
 footer .bouton:hover{
-    background-color:#dcb5f4;
-    border: 2px solid #f0d7f6;
+    background-color:#d1edff;
+    border: 2px solid #eef8ff;
+}
+
+#finish{
+    font-size: 0.8em;
+    text-align: center;
 }
