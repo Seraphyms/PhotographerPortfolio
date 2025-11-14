@@ -1,6 +1,6 @@
 # Portfolio of a Photographer ☼
 
-Evalued work about a portfolio of a photographer
+Evalued work about a portfolio of a photographer<br>
 With Carrousel, Responsive, Buttons, Nav/Header/Footer and a lot of pastel colors.
 
 ⠀⠀⠀⠀⠀⠀⢀⣰⣀⠀⠀⠀⠀⠀⠀⠀⠀<br>
