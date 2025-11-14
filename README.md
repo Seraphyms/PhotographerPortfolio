@@ -1,7 +1,7 @@
-# Portfolio of Desature Photographer
+# Portfolio of a Photographer ☼
 
 Evalued work about a portfolio of a photographer
-With Carrousel, Responsive, Button, Nav/Header/Footer and a lot of pastel colors
+With Carrousel, Responsive, Buttons, Nav/Header/Footer and a lot of pastel colors.
 
 ⠀⠀⠀⠀⠀⠀⢀⣰⣀⠀⠀⠀⠀⠀⠀⠀⠀<br>
 ⢀⣀⠀⠀⠀⢀⣄⠘⠀⠀⣶⡿⣷⣦⣾⣿⣧<br>
