@@ -20,16 +20,11 @@ body{
 a{
     text-decoration: none;
     color: inherit;
-    transition: transform 0.2s ease;;
-}
-
-a:hover{
-    transform: scale(1.03);
 }
 
 .bouton:hover{
     background-color: white;
-    color: black;
+    color: rgb(49, 33, 29);
     border: 3px solid #c6e4ff;
     transform: scale(1.03);
 }
@@ -37,7 +32,7 @@ a:hover{
 .bouton{
     display: flex;
     background-color: white;
-    color: black;
+    color:  rgb(87, 59, 51);
     border: 3px solid #f2e0ff;
     border-radius: 15px;
     width: fit-content;
@@ -56,7 +51,7 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     padding: 15px;
-    color: black;
+    color: rgb(87, 59, 51);
     padding-right: 1%;
     margin-bottom: 2%;   
 }
@@ -140,12 +135,11 @@ main h3{
     border-radius: 25px;
     font-size: 1.9em;
     font-weight: bold;
-    border: 3px solid #e0f3ff;
     padding: 15px;
     margin: 40px;
     margin-bottom: 20px;
     text-align: center;
-    color: black;
+    color:  rgb(68, 43, 36);
 }
 
 
@@ -303,6 +297,7 @@ main h3{
     text-align: center;
     border: 3px solid rgb(202, 171, 137);
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 #Témoin img{
@@ -333,8 +328,9 @@ main h3{
 }
 
 footer{
-    color: black;
+    color:  rgb(87, 59, 51);
     background-color: white;
+    font-weight: 800;
     margin: 0;
     border-radius: 16px 16px 0px 0px;
     padding: 1%;
@@ -354,6 +350,7 @@ footer img{
 
 footer h3{
     font-size: 1.5em;
+    font-weight: bolder;
 }
 
 footer .bouton{
