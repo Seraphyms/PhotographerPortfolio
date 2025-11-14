@@ -13,7 +13,11 @@ p{
 a{
     text-decoration: none;
     color: inherit;
-    transition: transform 200ms ease;
+    transition: transform 0.2s ease;;
+}
+
+a:hover{
+    transform: scale(1.03);
 }
 
 .bouton:hover{
@@ -47,8 +51,23 @@ nav{
     padding: 15px;
     color: black;
     padding-right: 1%;
-    margin-bottom: 2%;
-    
+    margin-bottom: 2%;   
+}
+
+@media (max-width: 900px) {
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #logo {
+    justify-content: center; /* centrer le logo aussi si tu veux */
+  }
+
+  #menu {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 #logo a{
@@ -93,7 +112,7 @@ nav #menu{
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     font-size: 1.2em;
@@ -143,6 +162,11 @@ main h3{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+#Presta{
+    background-color: white;
+    border-radius: 25px;
 }
 
 #Presta .articles, #Témoin .articles{
@@ -198,6 +222,7 @@ main h3{
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     margin: 20px;
+    border-radius: 25px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
