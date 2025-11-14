@@ -376,9 +376,19 @@ footer .bouton:hover{
     width: 250px;
     height: 250px;
   }
+
+      header {
+        font-size: 1.2em;
+        flex-direction: column
+    }
+
+    header .desc{
+        width: 80%;
+
+}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   nav {
     justify-content: center;
     text-align: center;
@@ -390,18 +400,11 @@ footer .bouton:hover{
 
   nav #menu {
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
   }
-
-    header {
-        font-size: 1.2em;
-    }
-
-    header .desc{
-        width: 80%;
-}
-    header img{
-        height: 300px ;
+      header img{
         width: 300px;
+        height: 300px;
     }
+
 }
