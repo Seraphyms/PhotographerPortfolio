@@ -54,22 +54,6 @@ nav{
     margin-bottom: 2%;   
 }
 
-@media (max-width: 900px) {
-  nav {
-    justify-content: center;
-    text-align: center;
-  }
-
-  #logo {
-    justify-content: center; /* centrer le logo aussi si tu veux */
-  }
-
-  #menu {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
 #logo a{
     display: flex;
     flex-wrap: wrap;
@@ -112,16 +96,17 @@ nav #menu{
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 2%;
+    margin-bottom: 40px;
 }
 
 header img{
-    height: 400px ;
-    width: 400px;
+    height: 500px ;
+    width: 500px;
     border-radius: 25px;
     object-fit: cover;
     border: 3px solid #75c9f5;
@@ -136,7 +121,7 @@ header .desc{
     flex-direction: column;
     justify-content: space-between;
     padding: 3%;
-    width: 600px;
+    width: 900px;
     background-color: rgb(167, 136, 103);
     border-radius: 25px;
     border: 5px solid rgb(182, 151, 118);
@@ -156,7 +141,7 @@ main h3{
     color: black;
 }
 
-/*Prestations*/
+
 #Presta, #Témoin, #Réal{
     display: flex;
     justify-content: center;
@@ -164,8 +149,9 @@ main h3{
     align-items: center;
 }
 
+/*Prestations*/
 #Presta{
-    background-color: white;
+    background-color: rgb(255, 255, 255,0.5);
     border-radius: 25px;
 }
 
@@ -180,8 +166,9 @@ main h3{
 
 #Presta article{
     display: flex;
-    width: 320px;
+    width: 448px;
     align-items: center;
+    font-size: 1.3em;
     flex-direction: column;
     background-color: rgb(167, 136, 103);
     border-radius: 25px;
@@ -194,31 +181,18 @@ main h3{
 }
 
 #Presta article img{
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
      border-radius: 25px;
     border: 5px solid rgb(182, 151, 118);
 }
 
-/*#Presta article:nth-child(1){
-    background-color: rgb(12, 29, 4
-    9,0.5);
-}
-
-#Presta article:nth-child(2){
-    background-color: rgb(76, 38, 65,0.5);
-}
-
-#Presta article:nth-child(3){
-    background-color: rgb(14, 80, 81,0.5);
-}*/
-/*Carousel*/
-
+/*Carrousel*/
 #carousel {
     position: relative;
-    width: 90vw;
-    height: 90Vh;
+    width: 95vw;
+    height: 95vh;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     margin: 20px;
@@ -389,4 +363,45 @@ footer .bouton:hover{
 #finish{
     font-size: 0.8em;
     text-align: center;
+}
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 1200px) {
+  #Presta article{
+    width: 320px;
+  }
+  #Presta article img{
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav #logo {
+    justify-content: center; /* centrer le logo aussi si tu veux */
+  }
+
+  nav #menu {
+    width: 100%;
+    justify-content: center;
+  }
+
+    header {
+        font-size: 1.2em;
+    }
+
+    header .desc{
+        width: 80%;
+}
+    header img{
+        height: 300px ;
+        width: 300px;
+    }
 }
