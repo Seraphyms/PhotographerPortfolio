@@ -159,10 +159,10 @@ main h3{
 #Presta .articles, #Témoin .articles{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    width: calc(100vw-17px);
-    margin-bottom: 20px;
+    width: 100%;
+    margin: 40px;
 }
 
 #Presta article{
@@ -220,7 +220,6 @@ main h3{
   flex-shrink: 0;    
 }
 
-/* Flèches gauche/droite */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -241,7 +240,6 @@ main h3{
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Déplacement slides selon input */
 #slide1:checked ~ .slides { transform: translateX(0); }
 #slide2:checked ~ .slides { transform: translateX(-100vw); }
 #slide3:checked ~ .slides { transform: translateX(-200vw); }
@@ -252,7 +250,6 @@ main h3{
 #slide8:checked ~ .slides { transform: translateX(-700vw); }
 #slide9:checked ~ .slides { transform: translateX(-800vw); }
 
-/* Afficher les bonnes flèches selon la slide */
 #slide1:checked ~ #prev1 { display: block; }
 #slide1:checked ~ #next1 { display: block; }
 
@@ -280,10 +277,10 @@ main h3{
 #slide9:checked ~ #prev9 { display: block; }
 #slide9:checked ~ #next9 { display: block; }
 
-/* Masquer toutes les flèches par défaut */
 .prev, .next { display: none; }
 
 /*Témoignage*/
+
 #Témoin article{
     display: flex;
     background-color: rgb(184, 152, 118);
